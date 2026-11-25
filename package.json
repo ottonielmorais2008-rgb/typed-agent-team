@@ -1,0 +1,39 @@
+{
+  "name": "typed-agent-team",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A supervisor routes a coding task through a Researcher, a Coder and a Reviewer. Every hand-off is validated with Zod. Optional Gemini, with a built-in demo mode.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:api && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "build:api": "node scripts/bundle-api.mjs"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vercel/node": "^5.5.15",
+    "@vitejs/plugin-react": "^6.1.2",
+    "esbuild": "^0.27.0",
+    "eslint": "^9.39.1",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^8.3.6",
+    "vitest": "^5.1.0"
+  }
+}
