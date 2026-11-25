@@ -1,0 +1,12 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+.vercel
+coverage
+*.tsbuildinfo
+.DS_Store
+
+# Source maps for bundled Vercel functions
+api/*.map
